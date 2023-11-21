@@ -12,13 +12,12 @@ git clone https://github.com/yourusername/pga-tour-predictive-model.git
 cd GolfWinsPredictor
 ```
 ## Dependencies
-Python 3
-pandas
-numpy
-scikit-learn
-matplotlib
-mplcursors
-
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
+- mplcursors
+- make sure to have python installed on your computer 
 ## Install dependencies:
 
 ``` bash
@@ -26,15 +25,16 @@ pip install pandas numpy scikit-learn matplotlib mplcursors
 ```
 ## Connect to the SQLite database:
 
-Ensure you have the SQLite database (golf_database.db) accessible.
-Run the Python script:
+- Ensure you have the SQLite database (golf_database.db) accessible.
+- Run the Python script:
 
-``bash
-python predictions.py ```
+``` bash
+python predictions.py
+ ```
 
 ## Predictive Model
-The model uses a linear regression algorithm to predict the number of victories based on various player statistics.
-Missing values in the dataset are imputed using the mean strategy.
+- The model uses a linear regression algorithm to predict the number of victories based on various player statistics.
+- Missing values in the dataset are imputed using the mean strategy.
 ## Visualization
-The scatterplot visually represents the relationship between actual wins and predicted wins.
-Each point on the plot corresponds to a PGA Tour player, with player names annotated for clarity.
+- The scatterplot visually represents the relationship between actual wins and predicted wins.
+- Each point on the plot corresponds to a PGA Tour player, with player names annotated for clarity.
