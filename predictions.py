@@ -45,7 +45,7 @@ data['Predicted Wins'] = model.predict(features_imputed)
 plt.figure(figsize=(10, 6)) 
 plt.scatter(data['VICTORIES'], data['Predicted Wins'], alpha=0.5)
 labels = data['PLAYER'].tolist()
-mplcursors.cursor(hover=True).connect("add", lambda sel: sel.annotation.set_text(labels[sel.target.index]))
+mplcursors.cursor(hover=True).connect("add", lambda sel: sel.annotation.set_text(labels[sel.index]))
 
 plt.xlabel('Actual Wins')
 plt.ylabel('Predicted Wins')
