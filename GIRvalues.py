@@ -3,7 +3,6 @@ import sqlite3
 conn = sqlite3.connect('golf_database.db')
 cursor = conn.cursor()
 
-# Update additional columns in the 'wins' table from 'GIR'
 columns_to_update = ['"GREENS%"', '"GREENS HIT"', '"# HOLES"', '"RELATIVE/PAR"']
 
 for column in columns_to_update:
