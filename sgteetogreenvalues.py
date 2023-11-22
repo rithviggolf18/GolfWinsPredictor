@@ -3,7 +3,6 @@ import sqlite3
 conn = sqlite3.connect('golf_database.db')
 cursor = conn.cursor()
 
-# Update the STGAVG column in the 'wins' table from 'sgteetogreen'
 query = '''
 UPDATE wins
 SET STGAVG = (
