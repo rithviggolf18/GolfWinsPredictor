@@ -8,7 +8,8 @@ from sklearn.impute import SimpleImputer
 from sklearn.neural_network import MLPRegressor
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import make_pipeline
-import statsmodels.api as sm
+from sklearn.metrics import mean_squared_error, mean_absolute_error
+
 
 conn = sqlite3.connect('golf_database.db')
 query = 'SELECT * FROM wins;'
@@ -51,5 +52,15 @@ plt.xlabel('Actual Wins')
 plt.ylabel('Predicted Wins')
 plt.title('Actual Wins vs. Predicted Wins')
 plt.show()
+
+# Make predictions on the test set
+predictions_test = model.predict(features_test_imputed)
+
+# Calculate MSE and MAE
+mse = mean_squared_error(target_test, predictions_test)
+mae = mean_absolute_error(target_test, predictions_test)
+
+print(f"Mean Squared Error (MSE): {mse}")
+print(f"Mean Absolute Error (MAE): {mae}")
 
 conn.close()
