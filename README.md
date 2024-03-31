@@ -1,5 +1,5 @@
 ﻿# GolfWinsPredictor
-This Python project implements a highly accurate predictive model using machine learning to analyze data extracted from an SQLite database on PGA Tour player performance. The model predicts the number of victories based on various player statistics. The predictions are visualized through an interactive scatterplot.
+This Python project implements a highly accurate predictive model using machine learning to analyze data extracted from an SQLite database on PGA Tour player performance. The model predicts the number of victories based on various player statistics. The predictions are visualized through an interactive scatterplot against the actual number of victories.
 
 ## Clone the repository:
 
