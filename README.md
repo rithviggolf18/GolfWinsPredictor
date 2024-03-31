@@ -33,7 +33,7 @@ python predictions.py
  ```
 
 ## Predictive Model
-- The model uses a linear regression algorithm to predict the number of victories based on various player statistics.
+- The model uses a MLP regression algorithm to predict the number of victories based on various player statistics.
 - Missing values in the dataset are imputed using the mean strategy.
 ## Visualization
 - The scatterplot visually represents the relationship between actual wins and predicted wins.
